@@ -19,7 +19,7 @@ Set your database data in inc/database.php
 then import aura.sql in you database
 
 
-## Chanelog
+## CHANGELOG
 
 FIFA 18 . Penalty Blocked
 
