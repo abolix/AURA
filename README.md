@@ -20,6 +20,10 @@ Set your database data in inc/database.php
 
 then import aura.sql in you database
 
+you should allow "allow-control-allow-origin:" in your browser . 
+
+You can use [THIS](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=es-419&utm_source=chrome-ntp-launcher) chrome extension .
+
 
 ## CHANGELOG
 
