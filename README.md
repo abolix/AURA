@@ -3,13 +3,15 @@
 
 <hr>
 
-i created this script to get live gather data from FIFA eSport in 1xbet to see in what time they will score in game .
+i created this script to gather data from FIFA eSport ( Live Games ) in 1xbet to see in what time they will score in game .
 
-example : ['20:01','52:00','90:00']
+Example ( Responded in Database ) : ['20:01','52:00','90:00']
 
-for predict next games . 
+To Analyse this games to predict next games ! ( it works ;) )
 
-i did not used it for about 5 month so you maybe should edit some small things . hope it helps
+i didn't used it for about 5 month so you maybe should edit some small things to work .
+
+i wrote this script when i was 17 so i was not that much pro on javascript . it's mess hahaha :)))
 
 
 ## INSTALL
