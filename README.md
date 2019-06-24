@@ -19,11 +19,14 @@ Set your database data in inc/database.php
 then import aura.sql in you database
 
 
-### Chanelog
+## Chanelog
 
 FIFA 18 . Penalty Blocked
 
 
-### TODO 
+<hr>
+
+
+## TODO 
 
 Remove Duplicate Match (in Auto Mode)
