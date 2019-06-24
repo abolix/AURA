@@ -1,9 +1,9 @@
 
 
-    var SportMatchID,SportStatus,JsonResponse,ID;
+    var SportMatchID,SportStatus,SportLeague,SportStatus2,JsonResponse,ID;
     var ResponseArray = [];
     function CreateData() {
-    var SportAPI = "https://1xirsp68.com/LiveFeed/Get1x2_VZip?sports=85&count=10&lng=en&mode=4&cyberFlag=1&country=75&partner=36&getEmpty=true";
+    var SportAPI = "https://1xirsp78.com/LiveFeed/Get1x2_VZip?sports=85&count=10&lng=en&mode=4&cyberFlag=1&country=75&partner=36&getEmpty=true";
     $.getJSON(SportAPI, function (SportData) {
 
         var List = SportData.Value;
@@ -13,7 +13,11 @@
         for (var ListItem in List) {
         SportMatchID = List[ListItem].I;
         SportStatus = List[ListItem].SC.I;
-        MatchIDList.push(SportMatchID);
+        SportStatus2 = List[ListItem].SC.CPS;
+        SportLeague = List[ListItem].L;
+        if (SportLeague !== "FIFA18. Penalty") { // Do NOT ACCEPT PENALTY
+            MatchIDList.push(SportMatchID);
+        }
         }
         function AjaxResponse(){ 
             console.log(JsonResponse);
@@ -37,7 +41,7 @@
             type: "POST",
             url: "inc/matchid.php",             
             cache: false,             
-            data: {Matchid: MatchIDList,Status: SportStatus},
+            data: {Matchid: MatchIDList,Status: SportStatus,Status2: SportStatus2},
             success: function(response){                    
                 JsonResponse = response;
                 AjaxResponse();
@@ -62,7 +66,7 @@ function getData() {
 
    // var ID = SportMatchID;
     MyID = ID;
-    var API = "https://1xirsp68.com/LiveFeed/GetGameZip?id=" + ID + "&lng=en&cfview=0&isSubGames=true&GroupEvents=true&allEventsGroupSubGames=true&countevents=250&partner=36";
+    var API = "https://1xirsp78.com/LiveFeed/GetGameZip?id=" + ID + "&lng=en&cfview=0&isSubGames=true&GroupEvents=true&allEventsGroupSubGames=true&countevents=250&partner=36";
     $.getJSON(API, function (data) {
         //var MyBet = data.Value.GE[2].E[0][0].T;
 
