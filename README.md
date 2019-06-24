@@ -10,3 +10,20 @@ example : ['20:01','52:00','90:00']
 for predict next games . 
 
 i did not used it for about 5 month so you maybe should edit some small things . hope it helps
+
+
+## INSTALL
+
+Set your database data in inc/database.php
+
+then import aura.sql in you database
+
+
+### Chanelog
+
+FIFA 18 . Penalty Blocked
+
+
+### TODO 
+
+Remove Duplicate Match (in Auto Mode)
