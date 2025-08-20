@@ -1,38 +1,26 @@
-# AURA
-1xBet live data save for FIFA eSport
+# ⚡ AURA
+**1xBet Live Data Saver for FIFA eSport**
 
-<hr>
+---
 
-i created this script to gather data from FIFA eSport ( Live Games ) in 1xbet to see in what time they will score in game .
+## 🚨 IMPORTANT UPDATE
+⚠️ **This project is no longer maintained!**  
+Since I switched my main programming language from **PHP** to **Python** a long time ago, I will **not update this repository anymore**.  
 
-Example ( Responded in Database ) : ['20:01','52:00','90:00']
+👉 Please check out my newer version here:  
+🔗 [AURA-Py](https://github.com/abolix/AURA-Py) — I *might* update this one if I have some free time.
 
-To Analyse this games to predict next games ! ( it works ;) )
-
-i didn't used it for about 5 month so you maybe should edit some small things to work .
-
-i wrote this script when i was 17 so i was not that much pro on javascript . it's mess hahaha :)))
-
-
-## INSTALL
-
-Set your database data in inc/database.php
-
-then import aura.sql in you database
-
-you should allow "allow-control-allow-origin:" in your browser . 
-
-You can use [THIS](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=es-419&utm_source=chrome-ntp-launcher) chrome extension .
+---
 
 
-## CHANGELOG
+## 📖 About
+I originally created this script to **collect live data from FIFA eSport games (via 1xBet)** in order to analyze when goals were scored.  
 
-FIFA 18 . Penalty Blocked
+**Example (saved in DB):**  
+`['20:01', '52:00', '90:00']`
 
 
-<hr>
+The idea was to analyze previous matches to help predict scoring patterns in upcoming games. (*And yes, it worked 😉*).  
 
-
-## TODO 
-
-Remove Duplicate Match (in Auto Mode)
+This project is old (I wrote it when I was **17**) and I haven’t used it for about 5 months, so you may need to tweak a few things if you want to run it.  
+Also, fair warning: the JavaScript is pretty messy 😂.
